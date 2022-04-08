@@ -1,5 +1,7 @@
 # run-cap-on-android
 
+https://user-images.githubusercontent.com/23533178/162486231-7c22ed5e-0b39-4fe0-ba44-32ef5dc4c0f5.mp4
+
 `run-cap-on-android` is a command line tool to improve DX when developing Capacitor apps on WSL.
 
 As of April 2022, Android Studio still has very poor support for WSL2. You can open projects from WSL, but the Gradle sync will fail. This means there is no way to quickly run your Capacitor app on an Android emulator without first copying your entire project to the Windows filesystem.
