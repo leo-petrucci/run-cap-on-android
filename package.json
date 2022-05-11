@@ -1,7 +1,7 @@
 {
   "name": "run-cap-on-android",
   "version": "0.0.0-development",
-  "description": "A template for creating npm CLI tools using TypeScript and VSCode",
+  "description": "Builds a capacitor app on WSL and starts it on the Windows Android emulator.",
   "files": [
     "!lib/__tests__/**/*",
     "lib/**/*",
@@ -26,33 +26,27 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryansonshine/typescript-npm-cli-template.git"
+    "url": "https://github.com/creativiii/run-cap-on-android.git"
   },
   "license": "MIT",
   "author": {
-    "name": "Ryan Sonshine",
-    "email": "ryansonshine@users.noreply.github.com",
-    "url": "https://github.com/ryansonshine"
+    "name": "Leonardo Petrucci",
+    "email": "leonardo@ironeko.com",
+    "url": "https://github.com/creativiii"
   },
   "engines": {
     "node": ">=12.0"
   },
   "keywords": [
-    "boilerplate",
+    "capacitor",
     "cli",
-    "template",
-    "typescript",
-    "vscode",
-    "jest",
-    "husky",
-    "commitizen",
-    "semantic-release",
-    "codecov"
+    "ionic",
+    "android"
   ],
   "bugs": {
-    "url": "https://github.com/ryansonshine/typescript-npm-cli-template/issues"
+    "url": "https://github.com/creativiii/run-cap-on-android/issues"
   },
-  "homepage": "https://github.com/ryansonshine/typescript-npm-cli-template#readme",
+  "homepage": "https://github.com/creativiii/run-cap-on-android#readme",
   "dependencies": {
     "commander": "^7.2.0"
   },
@@ -76,7 +70,7 @@
     "ora": "^5.4.0",
     "prettier": "^2.2.1",
     "prompts": "^2.4.2",
-    "semantic-release": "^17.4.7",
+    "semantic-release": "^19.0.2",
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1",
     "typescript": "^4.2.4"
@@ -91,7 +85,7 @@
   },
   "release": {
     "branches": [
-      "main"
+      "master"
     ]
   }
 }
