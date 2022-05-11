@@ -18,7 +18,7 @@ export const buildApp = async ({
   androidFolder: string | undefined;
   sdk: string | undefined;
 }): Promise<void> => {
-  let spinner = ora('Running capacitor sync').start();
+  let spinner = ora('Running capacitor sync...').start();
 
   await execAsync('npx cap sync', {
     cwd: root,
@@ -28,7 +28,7 @@ export const buildApp = async ({
 
   log(`🆗 ${chalk.green.bold('Capacitor sync complete!')}`);
 
-  spinner = ora('Building your app, this might take a while...').start();
+  spinner = ora('Initiating gradle sync, this might take a while...').start();
 
   await execAsync('./gradlew syncDebugLibJars', {
     env: {
@@ -38,7 +38,11 @@ export const buildApp = async ({
     cwd: `${root}/${androidFolder || ''}android`,
   });
 
+  spinner.stop();
+
   log(`🆗 ${chalk.green.bold('Gradle sync complete!')}`);
+
+  spinner = ora('Building your app, this might take a while...').start();
 
   await execAsync('chmod +x ./gradlew', {
     cwd: `${root}/${androidFolder || ''}android`,
