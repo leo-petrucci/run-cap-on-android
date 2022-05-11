@@ -45,14 +45,6 @@ and
 
 Save and close everything. After restarting your terminal you should be able to run both the `adb` and `emulator` commands.
 
-#### On WSL
-
-WSL needs to have the same version of `adb` installed as Windows. `sudo apt install android-sdk` will install version 1.0.39.
-
-You can also download it from the [Android Docs](https://developer.android.com/studio/releases/platform-tools).
-
-Depending on your distro and how you intalled it, there might be different ways to add to $PATH. [This guide](https://www.howtogeek.com/658904/how-to-add-a-directory-to-your-path-in-linux/) will probably help you, if in doubt just Google it.
-
 ## Usage
 
 ```bash
