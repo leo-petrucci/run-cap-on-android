@@ -12,6 +12,25 @@ As of April 2022, Android Studio still has very poor support for WSL2. You can o
 
 ```bash
 npm install run-cap-on-android -D
+# or
+yarn add run-cap-on-android -D
+```
+
+and then add the following to your `package.json`:
+
+```json
+"scripts": {
+  // ... other scripts
+  "cap-on-android": "run-cap-on-android -id com.myapp"
+}
+```
+
+then run:
+
+```bash
+npm run cap-on-android
+# or
+yarn run cap-on-android
 ```
 
 ### Installing Gradle
